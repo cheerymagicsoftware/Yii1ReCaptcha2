@@ -51,7 +51,7 @@ $form->widget('application.extensions.reCaptcha2.SReCaptcha',
         'model' => $model,
         //'attribute' => 'reCaptcha' //if we use model name equal attribute or customize attribute
     ]
-); ?>
+);
 ```
 
 * If you use several forms or ajax and need multi render ReCaptchas:
@@ -83,4 +83,6 @@ More information:
 
 *[https://developers.google.com/recaptcha/docs/display](https://developers.google.com/recaptcha/docs/display).
 
-*[https://developers.google.com/recaptcha/docs/verify](https://developers.google.com/recaptcha/docs/verify)
+*[https://developers.google.com/recaptcha/docs/verify](https://developers.google.com/recaptcha/docs/verify).
+
+*[https://cheerymagicsoftware.github.io/post/google-recaptcha-v2-widget-for-yii-1](https://cheerymagicsoftware.github.io/post/google-recaptcha-v2-widget-for-yii-1).
