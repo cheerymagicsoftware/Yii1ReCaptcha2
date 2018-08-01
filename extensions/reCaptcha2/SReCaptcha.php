@@ -122,7 +122,10 @@ class SReCaptcha extends CInputWidget
                 $this->attribute = $this->name;
 
             if ($this->hasModel()) {
-                echo CHtml::error($this->model, $this->attribute);
+            	if (method_exists($this->owner, 'error'))
+                    echo $this->owner->error($this->model, $this->attribute);
+            	else
+		            echo CHtml::error($this->model, $this->attribute);
             }
         }
     }
